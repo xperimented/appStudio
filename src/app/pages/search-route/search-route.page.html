@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Search Route</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+  <div class=padding>
+    <br>
+    <ion-item lines="none" (click)="showAdvncePicker()">
+  
+      <ion-label > <ion-icon name="trail-sign-outline"></ion-icon> Travling from </ion-label>
+      <ion-label > {{departure}} to {{destination}} </ion-label>
+      
+      
+      </ion-item>
+      <br>
+      
+  <ion-item text-center lines="none">
+    <ion-label><ion-icon name="calendar-outline"></ion-icon> Date</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+  </ion-item>
+  <br>
+  <ion-item lines="none">
+    <ion-label><ion-icon name="time-outline"></ion-icon> Hour</ion-label>
+    <ion-datetime displayFormat="HH:mm"></ion-datetime>
+  </ion-item>
+  <br>
+
+
+<br>
+<br>
+<ion-item  lines="none">
+  <ion-label >
+<ion-button  shape="round"  routerLink="/tabs" >search</ion-button>
+</ion-label>
+</ion-item>
+</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
