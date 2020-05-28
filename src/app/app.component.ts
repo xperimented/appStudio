@@ -16,6 +16,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Profile',
+      url: '/profile',
+      icon: 'person'
+    },
+    {
       title: 'choose route',
       url: '/choose-route',
       icon: 'briefcase'

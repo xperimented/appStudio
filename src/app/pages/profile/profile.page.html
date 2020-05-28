@@ -1,9 +1,37 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="header">
+    
+    
+  </div>
+  <div class="flex">
+  <div class="border-blue">
+  <div class="border-white">
+  <div class="img-box">
+    <img src="../../assets/caricature.jpg">
+  </div>
+  </div>
+</div>
 
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="flex" *ngIf="user != undefined">
+  <h2>Name : {{ user["name"]  }} <br> first name : {{ user["firstname"]  }} <br> Adresse : {{user["adresse"]}} <br> Phone : {{user["phone"]}} <br> Email : {{user["email"]}}</h2>
+  
+ </div>
+ 
 </ion-content>
