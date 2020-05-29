@@ -25,13 +25,24 @@
 </div>
 <br>
 <br>
-<br>
-<br>
-<br>
-
+<ion-card>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="flex" *ngIf="user != undefined">
+    
+    <h2>  <b>{{ user["name"]  }} </b></h2> 
+   
+   </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
 
 <div class="flex" *ngIf="user != undefined">
-  <h2>name : {{ user["name"]  }}</h2> 
+  <h2><b>{{ user["firstname"]  }}</b></h2> 
  
  </div>
  <br>
@@ -39,18 +50,8 @@
  <br>
  <br>
  <br>
-
 <div class="flex" *ngIf="user != undefined">
-  <h2>first name: {{ user["firstname"]  }}</h2> 
- 
- </div>
- <br>
- <br>
- <br>
- <br>
- <br>
-<div class="flex" *ngIf="user != undefined">
- <h2>Adresse : {{ user["adresse"]  }}</h2> 
+ <h2><b>{{ user["adresse"]  }}</b></h2> 
 
 </div>
 <br>
@@ -59,7 +60,7 @@
 <br>
 <br>
 <div class="flex" *ngIf="user != undefined">
-  <h2>Phone : {{ user["phone"]  }}</h2> 
+  <h2><b>{{ user["phone"]  }}</b></h2> 
  
  </div>
  <br>
@@ -68,7 +69,8 @@
 <br>
 <br>
 <div class="flex" *ngIf="user != undefined">
-  <h2>email: {{ user["email"]  }}</h2> 
+  <h2><b>{{ user["email"]  }}</b></h2> 
  
  </div>
+</ion-card>
 </ion-content>
