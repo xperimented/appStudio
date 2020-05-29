@@ -29,9 +29,20 @@
 <br>
 <br>
 
-<div class="flex" *ngIf="user != undefined">
-  <h2>Name : {{ user["name"]  }} <br> first name : {{ user["firstname"]  }} <br> Adresse : {{user["adresse"]}} <br> Phone : {{user["phone"]}} <br> Email : {{user["email"]}}</h2>
-  
- </div>
+
  
+
+
+<div class="flex" *ngIf="user != undefined">
+ <h2>adresse : {{ user["adresse"]  }}</h2> 
+
+</div>
+<div class="flex" *ngIf="user != undefined">
+  <h2> {{ user["firstname"]  }}</h2> 
+ 
+ </div>
+<div class="flex" *ngIf="user != undefined">
+  <h2>Name : {{ user["name"]  }}</h2> 
+ 
+ </div>
 </ion-content>
